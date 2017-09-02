@@ -1,3 +1,4 @@
+require_relative 'constant'
 class ReadResume
   def initialize path
     @file_obj = File.open(path)
@@ -23,12 +24,12 @@ class ReadResume
 
   def title_level
     {
-      0 => "*",
-      1 => "-",
-      2 => "."
+      0 => STAR,
+      1 => HYPHEN,
+      2 => DOT 
     }
   end
   def print_space(level=0)
-    " " * (level * 5)
+    " " * (level * LSPACE)
   end
 end

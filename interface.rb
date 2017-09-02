@@ -2,6 +2,8 @@ require_relative 'read_resume'
 require_relative 'add_resume_content'
 require_relative 'delete_resume_content'
 
+#TODO:Validate the input values
+
 include Constant
 loop do
   puts "1 Read"
